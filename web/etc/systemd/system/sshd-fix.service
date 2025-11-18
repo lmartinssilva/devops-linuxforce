@@ -1,0 +1,12 @@
+[Unit]
+Description=Fix (by regenerating) the issue with missing SSH host keys
+Before=ssh.service
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/sshd-fix.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
