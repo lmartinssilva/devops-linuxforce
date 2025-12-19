@@ -1,3 +1,7 @@
 .vagrant/
 web/etc/
 web/lib/
+web/dev/
+terra/aws/.terraform
+terra/docker/.terraform 
+
